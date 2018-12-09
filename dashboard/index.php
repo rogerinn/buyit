@@ -76,7 +76,7 @@
                     <li class="mt">
                         <a class="active" href="#" onclick="miFuncao()">
               <i class="fa fa-dashboard"></i>
-              <span>Comprar token BYT</span>
+              <span>Comprar token </span>
               </a>
                     </li>
                 </ul>
@@ -149,9 +149,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             <!--/eventos-->
-                            <div id="eventos">
                               <div class="col-md-12">
                                     <div class="white-panel pn">
                                         <div class="white-header">
@@ -183,19 +181,9 @@
                                           </div>
                                       </div>
                                   </div>
-                            </div>
+                                </div>
                               <!--end block col-md-12-->
                           </div>
-                        </div>
-                        <!-- /row -->
-                        <div class="row">
-                            <!-- /col-md-4 -->
-                            <!--  PROFILE 02 PANEL -->
-                            <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                                <!-- /panel -->
-                            </div>
-                            <!--/ col-md-4 -->
-                            <!-- /col-md-4 -->
                         </div>
                         <!-- /row -->
                     </div>
@@ -203,6 +191,7 @@
                     <!-- **********************************************************************************************************************************************************
               RIGHT SIDEBAR CONTENT
               *********************************************************************************************************************************************************** -->
+                    <div id="hyst">
                     <div class="col-lg-3 ds">
                         <!-- RECENT ACTIVITIES SECTION -->
                         <h4 class="centered mt">Historico de compra</h4>
@@ -271,6 +260,7 @@
                                 </p>
                             </div>
                         </div>
+                      </div>
                         <!-- USERS ONLINE SECTION -->
                         <!-- Second Member -->
                         <!-- Third Member -->
@@ -350,10 +340,18 @@
     </script>
     <script>
         function miFuncao() {
-           var x = document.getElementById("");
-           var y = document.getElementById("");
-           var z = document.getElementById("");
-
+           var x = document.getElementById("comercio");
+           var y = document.getElementById("hyst");
+           var z = document.getElementById("compras_onli");
+            if (x.style.display === 'block') {
+              x.style.display = 'none';
+              y.style.display = 'none';
+              z.style.display = 'block';
+            } else {
+              x.style.display = 'block';
+              y.style.display = 'block';
+              z.style.display = 'none';
+            }
           }
     </script>
 </body>
