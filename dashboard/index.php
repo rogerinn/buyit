@@ -184,6 +184,24 @@
                                 </div>
                               <!--end block col-md-12-->
                           </div>
+                          <div id="compras_onli" style="display: none; ">
+                            <div class="col-md-12">
+                                  <div class="white-panel pn">
+                                      <div class="white-header">
+                                          <h5>Peter pão.</h5>
+                                      </div>
+                                      <p><b><img src="../assets/img/icons/common/cheers.png"></b></p>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <p>20% de desconto</p>
+                                              <p>
+                                                  <B>Endereço:</b> Campus UFSC</p>
+                                              <p><b>Aceita BuyIt</b></p>
+                                          </div>
+                                      </div>
+                            </div>
+                          </div>
+                          </div>
                         </div>
                         <!-- /row -->
                     </div>
@@ -341,16 +359,13 @@
     <script>
         function miFuncao() {
            var x = document.getElementById("comercio");
-           var y = document.getElementById("hyst");
            var z = document.getElementById("compras_onli");
             if (x.style.display === 'block') {
               x.style.display = 'none';
-              y.style.display = 'none';
               z.style.display = 'block';
             } else {
               x.style.display = 'block';
-              y.style.display = 'block';
-              z.style.display = 'none';
+              z.style.display = 'none ';
             }
           }
     </script>
